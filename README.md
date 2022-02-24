@@ -5,12 +5,14 @@ internally scrolled element will fail to properly be tested in Applitools with t
 region / fully configurations when that element uses the CSS
 `scroll-behavior: smooth` declaration.
 
-You can test this by running a VRT test with this property enabled, vs disabled.
+You can test this by running a VRT test with this declaration enabled, vs disabled.
 
 When enabled, the test will fail to capture the full window, and the result you will
 see in Applitools will be a windowed screenshot of an arbitrary part of the content.
 
 Disabling the CSS property will yield the expected results.
+
+The CSS in question lives in `index.html`, line 49.
 
 ## How to use
 
